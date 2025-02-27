@@ -394,7 +394,8 @@ private fun BoxScope.SearchBlock(openSearchSheet: () -> Unit) {
 
             Text(
                 modifier = Modifier.padding(start = 16.dp),
-                text = stringResource(R.string.search)
+                text = stringResource(R.string.search),
+                color = Color.Black
             )
         }
     }

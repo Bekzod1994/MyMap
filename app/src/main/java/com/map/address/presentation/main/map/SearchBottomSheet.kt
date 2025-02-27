@@ -64,7 +64,12 @@ fun SearchBottomSheet(
     query: String,
     onQueryChange: (String) -> Unit,
     showLocation: (GeoObject) -> Unit,
-    placeholder: @Composable (() -> Unit)? = { Text(stringResource(R.string.search)) },
+    placeholder: @Composable (() -> Unit)? = {
+        Text(
+            stringResource(R.string.search),
+            color = Color.Black
+        )
+    },
     leadingIcon: @Composable (() -> Unit)? = {
         Icon(
             Icons.Default.Search,
